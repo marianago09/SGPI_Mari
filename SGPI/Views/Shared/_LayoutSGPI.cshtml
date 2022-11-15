@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SGPI.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p> Sistema de Gestión de Posgrados de Ingeniería @DateTime.Now.Year</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Recuperar contraseña.";
+}
+
+
+
+<center><h5 class="display-4 fw-normal mb-3 pb-3">Olvidar Contraseña</h5> </center>
+<form class="col-lg-6 offset-lg-3">
+    <div class="form-group">
+
+        
+       <label for="usuariotxt">Usuario</label>
+       <input type="text" class="form-control col-sm-4" id="usuariotxt" required />
+    </div>
+
+
+    <div class="form-group">
+        <label for="emailtxt">Correo electrónico</label>
+        <input type="email" class="form-control col-sm-4" id="emailtxt" required />
+    </div>
+
+    <div>
+       <a href="/Administrador/OlvidarContraseña" id="recuperarPass" >¿Olvidaste la contraseña?</a>
+       <br />
+       <button id="enviarbtn" class="btn btn-success" type="submit">Enviar</button>
+       <button id="volverbtn" class="btn btn-secondary" type="submit">Volver</button>
+    </div>
+
+</form>
+

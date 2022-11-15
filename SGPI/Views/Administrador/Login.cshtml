@@ -1,0 +1,66 @@
+﻿@model SGPI.Models.Usuario
+@{
+    ViewData["Title"] = "Sistema de gestión de posgrados de ingeniería.";
+    Layout = "_LayoutSGPI";
+}
+
+
+    @if (ViewBag.mensaje != null)
+{
+    <h1>@ViewBag.mensaje</h1>
+}
+
+<section class="vh-100">
+    <br />
+    <br /> 
+    <br /> 
+    <br /> 
+    <br />  
+    <br />
+
+    <div class="card mx-10 mx-md-10 shadow-5-strong" style=" margin-top: -100px; background:#FFE089; backdrop-filter: blur(30px);">
+
+        <div class="container py-5 h-100">
+
+            <div class="row d-flex align-items-center justify-content-center h-100">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <img src="https://media2.giphy.com/media/3og0IuymsB9sy0C2Vq/giphy.gif?cid=790b76111f83d7cf9eec72810915d7e14309b2f3437e231e&rid=giphy.gif&ct=g"
+                              class="rounded img-fluid" alt="Phone image">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <form method= "post">
+                     <center><h5 class="display-4 fw-normal mb-3 pb-3">SISTEMA DE GESTIÓN DE POSGRADOS.</h5> </center>
+                                                <!-- Email input -->
+                                                
+                                                
+                                                
+                                                <div class="form-outline mb-4">
+                                                    <center><label class="form-label" for="usuariotxt">Usuario</label></center>
+                                                    <input asp-for="NumeroDocumento" type= "text" id="usuariotxt" class="form-control form-control-lg" />
+                                                </div>
+
+                                                <!-- Password input -->
+                                                <div class="form-outline mb-4">
+                                                    <center><label class="form-label" for="passwordtxt">Contraseña</label></center>
+                                                    <input asp-for="Password" type= "password" id="passwordtxt" class="form-control form-control-lg" />
+                                                </div>
+
+                                                <div class="d-flex justify-content-around align-items-center mb-4">
+                                                    <!-- Checkbox -->
+                                                    <div class="form-check">
+                                                        <a href="/Administrador/OlvidarContraseña">Olvidó su contraseña?</a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Submit button -->
+                                        <center><button type="submit" class="btn btn-lg text-white border border-white" style="background-color: #FFE04F">INGRESAR</button></center>
+
+
+                    </form>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

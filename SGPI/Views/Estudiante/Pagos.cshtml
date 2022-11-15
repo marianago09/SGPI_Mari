@@ -1,0 +1,57 @@
+﻿@model SGPI.Models.Pago
+
+@{
+    ViewData["Title"] = "Pagos.";
+    Layout = "_LayoutESTUDIANTE";
+}
+
+<form method="post">
+<div class="container">
+
+    <table class="table table-bordered table-striped" style="margin-top: 3rem;">
+        <thead>
+            <tr>
+                <th>Nº</th>
+                <th>Valor de pago</th>
+                <th>Fecha de Pago</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="col-md-8 mb-4">
+                        <input type="text" id="form3Example2" class="form-control" />
+                    </div>
+                </td>
+
+                <td>
+                    <div class="col-md-8 mb-4">
+                        <input asp-for="ValorPago" type="text" id="form3Example2" class="form-control" />
+                    </div>
+                </td>
+
+                <td>
+                    <div class="col-md-8 mb-4">
+                        <input asp-for="Fecha" type="date">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="form-group">
+                        <input type="file" id="ejemplo_archivo_1"/>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <button type="submit" class="btn btn-dark">Pagar</button>
+</form>

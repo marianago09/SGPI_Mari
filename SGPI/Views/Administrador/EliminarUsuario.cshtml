@@ -1,0 +1,65 @@
+﻿@model SGPI.Models.Usuario
+
+@{
+    ViewData["Title"] = "Eliminar usuario.";
+    Layout = "_LayoutADMINISTRADOR";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-4">Eliminar usuario.</h1>
+        </div>
+        <div class="col">
+            <br />
+            <a href="/Administrador/Login"><h4 class="text-right">Cerrar sesión.</h4></a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <h4>Eliminar Usuario</h4>
+    <div class="col">
+        <input asp-for="NumeroDocumento" type="text"
+               class="form-control col-sm-3" id="Eliminarusuariotxt" placeholder="Ingresar Usuario"
+               name="Eliminar Usuario">
+               <br> <br/>
+        <button class="col-lg-2 btn btn-dark" type="button">Buscar</button>
+    </div>
+    <br> <br/>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Genero</th>
+                <th>Documento</th>
+                <th>Programa</th>
+                <th>Rol</th>
+                <th>Correo Electronico</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+
+
+
+            </tr>
+        </thead>
+       
+    </table>
+
+    <div class="col-lg-6 offset-lg-5">
+        <button type="button" class="btn btn-dark">Eliminar Usuario</button>
+    </div>
+</div>
